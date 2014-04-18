@@ -1,0 +1,42 @@
+.clickSlide{
+	background-color:#ccc;
+	box-shadow: #333 3px 3px 6px;
+}
+
+.clickSlide ol{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.clickSlide ol>li>ul,.clickSlide ol>li>ul>li{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.clickSlide ol>li>ul{
+	background-color:#ddd;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.clickSlide ol .blockTitle{
+	background:linear-gradient(#EEEEEE,#BEBEBE,#B3B3B3);
+	border-bottom:2px solid #7A7A7A;
+	cursor:pointer;
+	display:inline-block;
+	font-weight: bold;
+	height:26px;
+	padding:14px 10px 14px;
+	width:100%;
+}
+
+.clickSlide ol .readMore{
+	display:none;
+	font-style:italic;
+}
+
+.clickSlide ol .selected{
+	background:linear-gradient(#FFBB73,#FF8300,#A65500);
+}
