@@ -18,7 +18,7 @@
       var ul = $(this).siblings('ul'),
           height = ul.attr('data-height');
   //Close any drawers that have selected class then remove class on click.
-    $('.selected').siblings().animate({height:'0'},200).css('padding','0').removeClass('selected');
+    $('.selected').siblings().removeClass('selected').animate({height:'0'},200).css('padding','0');
   //Open and close the drawer based on height.
     if(ul.height() > 0){
       ul.animate({height: '0'}).css('padding','0');
