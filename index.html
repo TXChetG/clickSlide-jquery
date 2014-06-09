@@ -16,7 +16,7 @@
   <p>Use of this plugin is very simple. I have style and function totally separated between CSS and Javascript. Changing the look of the drawers is as easy as changing the CSS to match your desires. The most basic example below is from my first iteration with this project.</p>
   <h2>Basic Usage</h2>
   <div class="clickSlide">
-    <ol class="light">
+    <ol class="basic">
       <li>
         <span class="blockTitle">Example Title 1<span class="readMore">&nbsp;&nbsp;&mdash;&nbsp;Read More&hellip;</span></span>
         <ul>
@@ -54,7 +54,7 @@
   <div id="lightTheme">
     <h2>Light Theme</h2>
     <div class="clickSlide">
-      <ol class="basic">
+      <ol class="light">
         <li>
           <span class="blockTitle">Example Title 1<span class="readMore">&nbsp;&nbsp;&mdash;&nbsp;Read More&hellip;</span></span>
           <ul>
@@ -93,6 +93,7 @@
   <script>
   jQuery(document).ready(function($){
     $('.basic').clickSlide();
+    $('.light').clickSlide();
   })
   </script>
 </body>
