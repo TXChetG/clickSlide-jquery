@@ -4,7 +4,7 @@
     var blockTitle = $(this).children('li').children('.blockTitle');
   //function to generate data-height attribute and default height to 0.
     blockTitle.siblings('ul').each(function(){
-      $(this).attr('data-height',$(this).height());
+      $(this).attr('data-height',$(this).height()+30);
     }).height('0');
   //Read More Hover Fade
     blockTitle.hover(function(){
