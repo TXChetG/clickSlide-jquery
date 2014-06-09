@@ -1,14 +1,3 @@
-/*Setting global Border-Box for examples -- May already exist in your code.*/
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  background-color: #36DA82;
-  color: #FFF;
-  font-family: 'Helvetica','Arial'; }
-
 /* .clickSlide is the parent div primarily controlling the width */
 .clickSlide {
   background-color: transparent;
