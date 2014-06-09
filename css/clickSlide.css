@@ -1,42 +1,74 @@
-.clickSlide{
-	background-color:#ccc;
-	box-shadow: #333 3px 3px 6px;
-}
+/*Setting global Border-Box for examples -- May already exist in your code.*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-.clickSlide ol{
-	list-style:none;
-	margin:0;
-	padding:0;
-}
+body {
+  background-color: #36DA82;
+  color: #FFF;
+  font-family: 'Helvetica','Arial'; }
 
-.clickSlide ol>li>ul,.clickSlide ol>li>ul>li{
-	list-style: none;
-	margin:0;
-	padding:0;
-}
+/* .clickSlide is the parent div primarily controlling the width */
+.clickSlide {
+  background-color: transparent;
+  width: 600px;
+  /*Essential Styles for the drawers. Only change these if you know what you're doing */
+  /*Basic Theme -- use .basic class*/
+  /*Light Theme -- use .light class*/ }
+  .clickSlide ol, .clickSlide ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .clickSlide ol li, .clickSlide ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .clickSlide ol li ul, .clickSlide ul li ul {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .clickSlide ol li ul li, .clickSlide ul li ul li {
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+      .clickSlide ol li .blockTitle, .clickSlide ul li .blockTitle {
+        cursor: pointer;
+        display: inline-block;
+        font-weight: bold;
+        height: 54px;
+        padding: 14px 10px;
+        width: 100%; }
+      .clickSlide ol li .readMore, .clickSlide ul li .readMore {
+        display: none;
+        font-style: italic; }
+  .clickSlide .basic li ul {
+    background-color: #DDD;
+    border: 0; }
+  .clickSlide .basic li .blockTitle {
+    background: linear-gradient(#eeeeee, #bebebe, #b3b3b3) repeat scroll 0 0 transparent;
+    border: 0;
+    border-bottom: 2px solid #7A7A7A;
+    color: #000; }
+  .clickSlide .basic li .selected {
+    background: linear-gradient(#ffbb73, #ff8300, #a65500) repeat scroll 0 0 transparent; }
+  .clickSlide .light li ul {
+    background-color: transparent;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF; }
+  .clickSlide .light li .blockTitle {
+    background: transparent;
+    border: 2px solid #FFF;
+    border-bottom: 0;
+    color: #FFF;
+    text-shadow: 2px 2px #00B454; }
+  .clickSlide .light li .selected {
+    background: #00B454; }
 
-.clickSlide ol>li>ul{
-	background-color:#ddd;
-	overflow-x:hidden;
-	overflow-y:auto;
-}
-
-.clickSlide ol .blockTitle{
-	background:linear-gradient(#EEEEEE,#BEBEBE,#B3B3B3);
-	border-bottom:2px solid #7A7A7A;
-	cursor:pointer;
-	display:inline-block;
-	font-weight: bold;
-	height:26px;
-	padding:14px 10px 14px;
-	width:100%;
-}
-
-.clickSlide ol .readMore{
-	display:none;
-	font-style:italic;
-}
-
-.clickSlide ol .selected{
-	background:linear-gradient(#FFBB73,#FF8300,#A65500);
-}
+/* Shadow Class -- use .shadow to add an offset shadow to the parent div.
+   this looks nice on light backgrounds */
+.shadow {
+  box-shadow: #333 3px 3px 6px; }
