@@ -16,6 +16,10 @@ body{
   padding:15px 20px;
 }
 
+#intro{
+  @extend .themeBox;
+}
+
 #basicTheme{
   @extend .themeBox;
 }
