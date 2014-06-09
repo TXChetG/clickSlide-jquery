@@ -8,10 +8,20 @@ body{
   background-color:#FFFFFF;
   color: #000;
   font-family: 'Helvetica','Arial';
+  padding: 0;
+  margin: 0;
+}
+
+.themeBox {
+  padding:15px 20px;
+}
+
+#basicTheme{
+  @extend .themeBox;
 }
 
 #lightTheme {
   background-color: #36DA82;
   color: #FFF;
-  padding: 15px 0;
+  @extend .themeBox;
 }
