@@ -17,3 +17,7 @@ body {
 #lightTheme {
   background-color: #36DA82;
   color: #FFF; }
+
+.clickSlideContainer {
+  margin: 0 auto;
+  width: 600px; }
